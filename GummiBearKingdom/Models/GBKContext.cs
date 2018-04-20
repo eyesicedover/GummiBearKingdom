@@ -7,9 +7,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GummiBearKingdom.Models
 {
-    public class ToDoListContext : DbContext
+    public class GBKContext : DbContext
     {
-        //public DbSet<Item> Items { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder
