@@ -4,36 +4,41 @@
 
 ## Description
 
-_A website used to track new candy products and create and display comments for each product._
+A website used to track candy products and create and display comments for each product.
 
 ## Database Relationships
-	_The database will feature a one to many relationship, many reviews to one product._
-	
+	The database will feature a one to many relationship, many reviews to one product.
+
 
 ##  Current Features
-  * CRUD for Products.
+  * CRUD for Products
+
+##  Future Features
+  * CRUD for Comments
+	* One to many relationship of Products and Comments
+	* Testing of all features
 
 ## Installation
 
-  1. _`$ git clone https://github.com/eyesicedover/GummiBearKingdom`_ 
+  1. _`$ git clone https://github.com/eyesicedover/GummiBearKingdom`_
 
   2. _`$ cd GummiBearKingdom`_
 
-  3. _Open the solution in VS 2017_
+  3. Open the solution in VS 2017
 
-  4. _Open MAMP. Set Apache port to 8888. Set MySQL port to 8889. Start up servers_
+  4. Open MAMP. Set Apache port to 8888. Set MySQL port to 8889. Start up servers
 
   5. _`$ dotnet ef database update`_
 
-  6. _Run the app in VS 2017_
+  6. Run the app in VS 2017
 
 ## Known Bugs
 
-_No known bugs at this time._
+No known bugs at this time.
 
 ## Support and contact details
 
-  _To suggest changes, submit a pull request in the GitHub repository._
+To suggest changes, submit a pull request in the GitHub repository.
 
 ## Technologies Used
 
@@ -41,10 +46,9 @@ _No known bugs at this time._
   * CSS
   * C#/.Net
   * Razor
-  * SQL
+  * MAMP/SQL
+	* Entity Framework
   * Visual Studio 2017
-
-_Dev Dependencies_
   * Bootstrap 4.0.0
 
 ### License
