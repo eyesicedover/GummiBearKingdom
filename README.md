@@ -6,10 +6,6 @@
 
 A website used to track candy products and create and display comments for each product.
 
-## Database Relationships
-	The database will feature a one to many relationship, many reviews to one product.
-
-
 ##  Current Features
   * CRUD for Products
 
