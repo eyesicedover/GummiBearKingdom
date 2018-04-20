@@ -15,7 +15,26 @@ namespace GummiBearKingdom.Controllers
         public IActionResult Index()
         {
             List<Product> model = db.Products.ToList();
+            return View(model);
+        }
+
+        public IActionResult Details(int id)
+        {
+            Product thisProduct = db.Products.FirstOrDefault(p => p.ProductId == id);
+            return View(thisProduct);
+        }
+
+        public IActionResult Create()
+        {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Product product)
+        {
+            db.Products.Add(product);
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }
