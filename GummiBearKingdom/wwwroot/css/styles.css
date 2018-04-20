@@ -1,0 +1,12 @@
+﻿html, body, .container {
+    background-color: black;
+    color: floralwhite;
+}
+
+.jumbotron {
+    background-color: purple;
+}
+
+.card, .card-body {
+    color: black;
+}

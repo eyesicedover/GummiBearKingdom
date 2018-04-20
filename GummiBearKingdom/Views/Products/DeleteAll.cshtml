@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Products - DeleteAll";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Are you sure you want to delete ALL products?</h2>
+<hr />
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Delete All" class="btn btn-primary" />
+}
+@Html.ActionLink("Back to Products", "Index")

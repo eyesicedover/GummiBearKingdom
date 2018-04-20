@@ -7,11 +7,20 @@
 
 <h4>All Products</h4>
 
-<p>@Html.ActionLink("Add new item", "Create")</p>
+<p>@Html.ActionLink("Add New Product", "Create")</p>
+@{
+    if (Model.Count() > 0)
+    {
+        <p>@Html.ActionLink("Delete All Products", "DeleteAll")</p>
+    }
+}
 <hr />
 @foreach (var listProduct in Model)
 {
-    <p>@Html.DisplayFor(modelItem => listProduct.Name)</p>
-    <p>@Html.ActionLink("Details", "Details", new { id = listProduct.ProductId }) | @Html.ActionLink("Edit", "Edit", new { id = listProduct.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = listProduct.ProductId })</p>
+    <div class="card card-body">
+        <p>@Html.DisplayFor(modelItem => listProduct.Name)</p>
+        <p>@Html.ActionLink("Details", "Details", new { id = listProduct.ProductId }) | @Html.ActionLink("Edit", "Edit", new { id = listProduct.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = listProduct.ProductId })</p>
+    </div>
+
     <hr />
 }
