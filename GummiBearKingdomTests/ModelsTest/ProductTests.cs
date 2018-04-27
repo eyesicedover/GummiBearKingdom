@@ -13,10 +13,6 @@ namespace GummiBearKingdomTests
             Product.ClearAll();
         }
 
-        public ProductTests()
-        {
-            DBConfiguration.ConnectionString = "server=localhost;user id=root;password=root;port=8889;database=gbk_test;";
-        }
         [TestMethod]
         public void TestMethod1()
         {
