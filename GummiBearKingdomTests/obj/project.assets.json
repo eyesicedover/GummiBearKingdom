@@ -10991,9 +10991,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sfaber\\Desktop\\Projects\\GummiBearKingdom\\GummiBearKingdomTests\\GummiBearKingdomTests.csproj",
-      "projectName": "GummiBearKingdomTests",
-      "projectPath": "C:\\Users\\sfaber\\Desktop\\Projects\\GummiBearKingdom\\GummiBearKingdomTests\\GummiBearKingdomTests.csproj",
+      "projectUniqueName": "C:\\Users\\sfaber\\Desktop\\Projects\\GummiBearKingdom\\GummiBearKingdomTests\\Tests.csproj",
+      "projectName": "Tests",
+      "projectPath": "C:\\Users\\sfaber\\Desktop\\Projects\\GummiBearKingdom\\GummiBearKingdomTests\\Tests.csproj",
       "packagesPath": "C:\\Users\\sfaber\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\sfaber\\Desktop\\Projects\\GummiBearKingdom\\GummiBearKingdomTests\\obj\\",
       "projectStyle": "PackageReference",

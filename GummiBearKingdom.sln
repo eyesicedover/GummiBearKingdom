@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GummiBearKingdom", "GummiBearKingdom\GummiBearKingdom.csproj", "{AC4CDFCD-BF2F-439A-AB65-22AE47EB2279}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GummiBearKingdomTests", "GummiBearKingdomTests\GummiBearKingdomTests.csproj", "{BC456269-4562-421B-9680-7D02B4D9DA56}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "GummiBearKingdomTests\Tests.csproj", "{BC456269-4562-421B-9680-7D02B4D9DA56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

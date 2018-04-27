@@ -1,0 +1,17 @@
+C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdomTests\obj\Debug\netcoreapp2.0\Tests.csprojResolveAssemblyReference.cache
+C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdomTests\obj\Debug\netcoreapp2.0\Tests.csproj.CoreCompileInputs.cache
+C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdomTests\obj\Debug\netcoreapp2.0\Tests.AssemblyInfoInputs.cache
+C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdomTests\obj\Debug\netcoreapp2.0\Tests.AssemblyInfo.cs
+C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdomTests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdomTests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdomTests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdomTests\bin\Debug\netcoreapp2.0\Tests.deps.json
+C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdomTests\bin\Debug\netcoreapp2.0\Tests.runtimeconfig.json
+C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdomTests\bin\Debug\netcoreapp2.0\Tests.runtimeconfig.dev.json
+C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdomTests\bin\Debug\netcoreapp2.0\Tests.dll
+C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdomTests\bin\Debug\netcoreapp2.0\Tests.pdb
+C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdomTests\bin\Debug\netcoreapp2.0\GummiBearKingdom.dll
+C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdomTests\bin\Debug\netcoreapp2.0\GummiBearKingdom.pdb
+C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdomTests\obj\Debug\netcoreapp2.0\Tests.csproj.CopyComplete
+C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdomTests\obj\Debug\netcoreapp2.0\Tests.dll
+C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdomTests\obj\Debug\netcoreapp2.0\Tests.pdb
