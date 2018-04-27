@@ -15,5 +15,23 @@ namespace GummiBearKingdom.Models
         public string Name { get; set; }
         public int Cost { get; set; }
         public string Description { get; set; }
+
+        public override bool Equals(System.Object otherItem)
+        {
+            if (!(otherItem is Product))
+            {
+                return false;
+            }
+            else
+            {
+                Product newItem = (Product)otherItem;
+                return this.ProductId.Equals(newItem.ProductId);
+            }
+        }
+
+        public override int GetHashCode()
+        {
+            return this.ProductId.GetHashCode();
+        }
     }
 }
