@@ -48,5 +48,20 @@ namespace GummiBearKingdom.Models
         {
             return this.ProductId.GetHashCode();
         }
+
+        public double GetAverageRating()
+        {
+            double average = 0;
+            if(Reviews.Count > 0)
+            {
+                foreach (var review in Reviews)
+                {
+                    average += review.Rating;
+                }
+                average = average / Reviews.Count;
+            }
+            
+            return average;
+        }
     }
 }

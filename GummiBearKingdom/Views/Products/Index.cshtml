@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Products - Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    
 }
 <div class="card card-body">
     <h4>All Products</h4>
@@ -17,10 +18,21 @@
 </div>
 @foreach (var listProduct in Model)
 {
-    <div class="card card-body">
-        <h5>@Html.DisplayFor(modelItem => listProduct.Name)</h5>
-        <p>@Html.ActionLink("Details", "Details", new { id = listProduct.ProductId }) | @Html.ActionLink("Edit", "Edit", new { id = listProduct.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = listProduct.ProductId })</p>
-    </div>
+     
+    var avgReview = listProduct.GetAverageRating();
 
+    <div class="card card-body">
+    <h5>@Html.DisplayFor(modelItem => listProduct.Name)</h5>
+    <p>@Html.ActionLink("Details", "Details", new { id = listProduct.ProductId }) | @Html.ActionLink("Edit", "Edit", new { id = listProduct.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = listProduct.ProductId })</p>
+    
+        @if (avgReview == 0)
+        {
+            <p>Average Rating: No reviews</p>
+        }
+        else
+        {
+            <p>Average Rating: @avgReview</p>
+        }
+    </div>
     <hr />
 }

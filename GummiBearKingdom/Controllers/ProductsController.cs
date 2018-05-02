@@ -31,7 +31,8 @@ namespace GummiBearKingdom.Controllers
 
         public IActionResult Index()
         {
-            return View(productRepo.Products.ToList());
+            var data = productRepo.Products.Include(x=>x.Reviews).ToList();
+            return View(data);
         }
 
         public IActionResult Details(int id)
