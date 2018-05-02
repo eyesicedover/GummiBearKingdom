@@ -78,7 +78,7 @@ namespace GummiBearKingdom.Controllers
         {
             Product thisProduct = productRepo.Products.FirstOrDefault(x => x.ProductId == id);
             productRepo.Remove(thisProduct);
-            List<Review> thisProductReviews = reviewRepo.Reviews.Include(y => y.ProductId == id).ToList();
+            List<Review> thisProductReviews = reviewRepo.Reviews.Where(y => y.ProductId == id).ToList();
             for(int j = 0; j < thisProductReviews.Count; j++)
             {
                 reviewRepo.Remove(thisProductReviews[j]);

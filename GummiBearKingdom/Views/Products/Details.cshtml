@@ -9,19 +9,36 @@
     <hr />
     @Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)<br />
     @Html.DisplayNameFor(model => model.Cost): $@Html.DisplayFor(model => model.Cost)<br />
-    @Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)
+    @Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)<br />
+    @{
+        var avgReview = Model.GetAverageRating();
+        @if (avgReview == 0)
+        {
+            <p>Average Rating: No reviews</p>
+        }
+        else
+        {
+            <p>Average Rating: @avgReview</p>
+        }
+    }
 </div>
 @{
     if (Model.Reviews.Count > 0)
     {
+        var counter = 1;
     <div class="card card-body">
         @foreach (var review in Model.Reviews)
         {
+            if(counter == 1)
+            {
+                counter++;
+            }
+            else
+            {
+                <hr />
+            }
             <p>Author: @review.Author | Rating: @review.Rating</p>
             <p>Review: @review.Content</p>
-            <br />
-            
-            <hr />
         }
     </div>
     }
