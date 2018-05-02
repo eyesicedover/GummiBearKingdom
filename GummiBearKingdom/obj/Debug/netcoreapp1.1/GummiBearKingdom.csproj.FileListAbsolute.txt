@@ -9,3 +9,14 @@ C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdom\obj\Debug\net
 C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdom\bin\Debug\netcoreapp1.1\GummiBearKingdom.pdb
 C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdom\obj\Debug\netcoreapp1.1\GummiBearKingdom.dll
 C:\Users\sfaber\Desktop\Projects\GummiBearKingdom\GummiBearKingdom\obj\Debug\netcoreapp1.1\GummiBearKingdom.pdb
+C:\Users\epicodus\Desktop\GummiBearKingdom\GummiBearKingdom\bin\Debug\netcoreapp1.1\GummiBearKingdom.deps.json
+C:\Users\epicodus\Desktop\GummiBearKingdom\GummiBearKingdom\bin\Debug\netcoreapp1.1\GummiBearKingdom.runtimeconfig.json
+C:\Users\epicodus\Desktop\GummiBearKingdom\GummiBearKingdom\bin\Debug\netcoreapp1.1\GummiBearKingdom.runtimeconfig.dev.json
+C:\Users\epicodus\Desktop\GummiBearKingdom\GummiBearKingdom\bin\Debug\netcoreapp1.1\GummiBearKingdom.dll
+C:\Users\epicodus\Desktop\GummiBearKingdom\GummiBearKingdom\bin\Debug\netcoreapp1.1\GummiBearKingdom.pdb
+C:\Users\epicodus\Desktop\GummiBearKingdom\GummiBearKingdom\obj\Debug\netcoreapp1.1\GummiBearKingdom.csprojResolveAssemblyReference.cache
+C:\Users\epicodus\Desktop\GummiBearKingdom\GummiBearKingdom\obj\Debug\netcoreapp1.1\GummiBearKingdom.csproj.CoreCompileInputs.cache
+C:\Users\epicodus\Desktop\GummiBearKingdom\GummiBearKingdom\obj\Debug\netcoreapp1.1\GummiBearKingdom.AssemblyInfoInputs.cache
+C:\Users\epicodus\Desktop\GummiBearKingdom\GummiBearKingdom\obj\Debug\netcoreapp1.1\GummiBearKingdom.AssemblyInfo.cs
+C:\Users\epicodus\Desktop\GummiBearKingdom\GummiBearKingdom\obj\Debug\netcoreapp1.1\GummiBearKingdom.dll
+C:\Users\epicodus\Desktop\GummiBearKingdom\GummiBearKingdom\obj\Debug\netcoreapp1.1\GummiBearKingdom.pdb

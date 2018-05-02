@@ -13,8 +13,22 @@ namespace GummiBearKingdom.Models
         [Key]
         public int ProductId { get; set; }
         public string Name { get; set; }
-        public int Cost { get; set; }
+        public double Cost { get; set; }
         public string Description { get; set; }
+
+        public virtual List<Review> Reviews { get; set; }
+
+        public Product()
+        {
+
+        }
+
+        public Product(string name, string description, double cost)
+        {
+            Name = name;
+            Description = description;
+            Cost = cost;
+        }
 
         public override bool Equals(System.Object otherItem)
         {

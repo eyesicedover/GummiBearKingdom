@@ -10,9 +10,11 @@ namespace GummiBearKingdom.Models
     public class GBKContext : DbContext
     {
         public DbSet<Product> Products { get; set; }
+        public DbSet<Review> Reviews { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            => optionsBuilder
-                .UseMySql(@"Server=localhost;Port=8889;database=gbk;uid=root;pwd=root;");
+        {
+            optionsBuilder.UseMySql(@"Server=localhost;Port=8889;database=gbk;uid=root;pwd=root;");
+        }         
     }
 }

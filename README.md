@@ -8,11 +8,9 @@ A website used to track candy products and create and display comments for each 
 
 ##  Current Features
   * CRUD for Products
-
-##  Future Features
   * CRUD for Comments
-	* One to many relationship of Products and Comments
-	* Testing of all features
+  * One to many relationship of Products and Comments
+  * Testing of all features
 
 ## Installation
 
@@ -43,7 +41,7 @@ To suggest changes, submit a pull request in the GitHub repository.
   * C#/.Net
   * Razor
   * MAMP/SQL
-	* Entity Framework
+  * Entity Framework
   * Visual Studio 2017
   * Bootstrap 4.0.0
 
