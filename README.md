@@ -8,7 +8,7 @@ A website used to track candy products and create and display comments for each 
 
 ##  Current Features
   * CRUD for Products
-  * CRUD for Comments
+  * Create and Delete for Comments
   * One to many relationship of Products and Comments
   * Testing of all features
 
@@ -20,7 +20,7 @@ A website used to track candy products and create and display comments for each 
 
   3. Open the solution in VS 2017
 
-  4. Open MAMP. Set Apache port to 8888. Set MySQL port to 8889. Start up servers
+  4. Open MAMP. Set Apache port to 8888. Set MySQL port to 8889. Start up servers.
 
   5. _`$ dotnet ef database update`_
 
