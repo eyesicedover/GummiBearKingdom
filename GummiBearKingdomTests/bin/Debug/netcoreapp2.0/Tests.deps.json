@@ -11,8 +11,11 @@
           "GummiBearKingdom": "1.0.0",
           "MSTest.TestAdapter": "1.2.0",
           "MSTest.TestFramework": "1.2.0",
+          "Microsoft.EntityFrameworkCore": "1.1.2",
+          "Microsoft.EntityFrameworkCore.Design": "1.1.2",
           "Microsoft.NET.Test.Sdk": "15.6.0",
-          "Moq": "4.8.2"
+          "Moq": "4.8.2",
+          "Pomelo.EntityFrameworkCore.MySql": "1.1.2"
         },
         "runtime": {
           "Tests.dll": {}
