@@ -10,3 +10,7 @@
 .card, .card-body {
     color: black;
 }
+
+.card {
+    margin-bottom: 10px;
+}

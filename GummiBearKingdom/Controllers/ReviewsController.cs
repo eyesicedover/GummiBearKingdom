@@ -25,5 +25,17 @@ namespace GummiBearKingdom.Controllers
                 this.reviewRepo = repo;
             }
         }
+
+        [HttpPost]
+        public IActionResult Create()
+        {
+            Review review = new Review();
+            review.Author = Request.Form["author"];
+            review.Content = Request.Form["content"];
+            review.ProductId = int.Parse(Request.Form["productId"]);
+            review.Rating = int.Parse(Request.Form["rating"]);
+            reviewRepo.Save(review);
+            return RedirectToAction("Details", "Products", new { id = review.ProductId });
+        }
     }
 }

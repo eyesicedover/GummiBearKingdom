@@ -13,16 +13,19 @@ namespace GummiBearKingdom.Controllers
     public class ProductsController : Controller
     {
         private IProductRepository productRepo;
+        private IReviewRepository reviewRepo;
 
-        public ProductsController(IProductRepository repo = null)
+        public ProductsController(IProductRepository repo = null, IReviewRepository revRepo = null)
         {
             if (repo == null)
             {
                 this.productRepo = new EFProductRepository();
+                this.reviewRepo = new EFReviewRepository();
             }
             else
             {
                 this.productRepo = repo;
+                this.reviewRepo = revRepo;
             }
         }
 
@@ -34,6 +37,7 @@ namespace GummiBearKingdom.Controllers
         public IActionResult Details(int id)
         {
             Product thisProduct = productRepo.Products.FirstOrDefault(p => p.ProductId == id);
+            thisProduct.Reviews = reviewRepo.Reviews.Where(x => x.ProductId == id).ToList();
             return View(thisProduct);
         }
 
