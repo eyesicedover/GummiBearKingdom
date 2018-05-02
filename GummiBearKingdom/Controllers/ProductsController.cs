@@ -77,6 +77,11 @@ namespace GummiBearKingdom.Controllers
         {
             Product thisProduct = productRepo.Products.FirstOrDefault(x => x.ProductId == id);
             productRepo.Remove(thisProduct);
+            List<Review> thisProductReviews = reviewRepo.Reviews.Include(y => y.ProductId == id).ToList();
+            for(int j = 0; j < thisProductReviews.Count; j++)
+            {
+                reviewRepo.Remove(thisProductReviews[j]);
+            }
             return RedirectToAction("Index");
         }
 
@@ -89,9 +94,14 @@ namespace GummiBearKingdom.Controllers
         public IActionResult DeleteAllConfirmed()
         {
             IEnumerable<Product> allProducts = productRepo.Products;
+            IEnumerable<Review> allReviews = reviewRepo.Reviews;
             foreach(var product in allProducts)
             {
                 productRepo.Remove(product);
+            }
+            foreach(var review in allReviews)
+            {
+                reviewRepo.Remove(review);
             }
             return RedirectToAction("Index");
         }

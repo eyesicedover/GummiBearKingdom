@@ -17,8 +17,10 @@
     <div class="card card-body">
         @foreach (var review in Model.Reviews)
         {
-            <p>review.Author</p>
-            <p>review.Content</p>
+            <p>Author: @review.Author | Rating: @review.Rating</p>
+            <p>Review: @review.Content</p>
+            <br />
+            
             <hr />
         }
     </div>

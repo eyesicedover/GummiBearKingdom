@@ -37,5 +37,13 @@ namespace GummiBearKingdom.Controllers
             reviewRepo.Save(review);
             return RedirectToAction("Details", "Products", new { id = review.ProductId });
         }
+
+        public IActionResult Edit(int id)
+        {
+            
+            return View();
+        }
+
+
     }
 }
