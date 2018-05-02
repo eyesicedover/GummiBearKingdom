@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace GummiBearKingdom.Models
 {
-    public class IReviewRepository
+    public interface IReviewRepository
     {
         IQueryable<Review> Reviews { get; }
         Review Save(Review review);
