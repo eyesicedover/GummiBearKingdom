@@ -33,7 +33,7 @@ namespace GummiBearKingdom.Controllers
             review.Author = Request.Form["author"];
             review.Content = Request.Form["content"];
             review.ProductId = int.Parse(Request.Form["productId"]);
-            review.Rating = int.Parse(Request.Form["rating"]);
+            review.Rating = Convert.ToDouble(int.Parse(Request.Form["rating"]));
             reviewRepo.Save(review);
             return RedirectToAction("Details", "Products", new { id = review.ProductId });
         }

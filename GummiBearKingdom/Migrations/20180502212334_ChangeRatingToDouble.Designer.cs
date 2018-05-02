@@ -8,9 +8,10 @@ using GummiBearKingdom.Models;
 namespace GummiBearKingdom.Migrations
 {
     [DbContext(typeof(GBKContext))]
-    partial class GBKContextModelSnapshot : ModelSnapshot
+    [Migration("20180502212334_ChangeRatingToDouble")]
+    partial class ChangeRatingToDouble
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2");

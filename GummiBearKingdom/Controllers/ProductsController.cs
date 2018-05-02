@@ -38,7 +38,10 @@ namespace GummiBearKingdom.Controllers
         public IActionResult Details(int id)
         {
             Product thisProduct = productRepo.Products.FirstOrDefault(p => p.ProductId == id);
-            thisProduct.Reviews = reviewRepo.Reviews.Where(x => x.ProductId == id).ToList();
+            if(reviewRepo != null)
+            {
+                thisProduct.Reviews = reviewRepo.Reviews.Where(x => x.ProductId == id).ToList();
+            }
             return View(thisProduct);
         }
 
