@@ -93,7 +93,7 @@ namespace GummiBearKingdom.Controllers
         {
             return View();
         }
-
+ 
         [HttpPost, ActionName("DeleteAll")]
         public IActionResult DeleteAllConfirmed()
         {

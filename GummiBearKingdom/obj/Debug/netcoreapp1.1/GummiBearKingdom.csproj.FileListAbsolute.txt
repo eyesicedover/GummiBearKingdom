@@ -19,3 +19,4 @@ C:\Users\epicodus\Desktop\GummiBearKingdom\GummiBearKingdom\obj\Debug\netcoreapp
 C:\Users\epicodus\Desktop\GummiBearKingdom\GummiBearKingdom\obj\Debug\netcoreapp1.1\GummiBearKingdom.AssemblyInfo.cs
 C:\Users\epicodus\Desktop\GummiBearKingdom\GummiBearKingdom\obj\Debug\netcoreapp1.1\GummiBearKingdom.dll
 C:\Users\epicodus\Desktop\GummiBearKingdom\GummiBearKingdom\obj\Debug\netcoreapp1.1\GummiBearKingdom.pdb
+C:\Users\epicodus\Desktop\GummiBearKingdom\GummiBearKingdom\obj\Debug\netcoreapp1.1\GummiBearKingdom.csprojResolveAssemblyReference.cache
