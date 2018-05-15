@@ -7,16 +7,20 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GummiBearKingdom.Models
 {
-    public class EFProductRepository : IProductRepository
+    public class EFTestProductRepository : IProductRepository
     {
-        GBKContext db = new GBKContext();
+        GBKTestContext db;
 
         public IQueryable<Product> Products
         { get { return db.Products; } }
 
-        public EFProductRepository()
+        public EFTestProductRepository()
         {
-            db = new GBKContext();
+            db = new GBKTestContext();
+        }
+        public EFTestProductRepository(GBKTestContext thisDb)
+        {
+            db = thisDb;
         }
 
         public Product Save(Product product)

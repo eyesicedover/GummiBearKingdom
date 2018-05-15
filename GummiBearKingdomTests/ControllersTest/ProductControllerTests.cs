@@ -12,6 +12,8 @@ namespace GummiBearKingdom.Tests.ControllerTests
     public class ProductControllerTests
     {
             Mock<IProductRepository> mock = new Mock<IProductRepository>();
+
+        EFTestProductRepository db = new EFTestProductRepository(new GBKTestContext());
         private void DbSetup()
         {
             mock.Setup(m => m.Products).Returns(new Product[]
@@ -128,6 +130,24 @@ namespace GummiBearKingdom.Tests.ControllerTests
             // Assert
             Assert.IsInstanceOfType(resultView, typeof(ViewResult));
             Assert.IsInstanceOfType(model, typeof(Product));
+        }
+
+        [TestMethod]
+        public void DB_CreatesNewEntries_Collection()
+        {
+            // Arrange
+            ProductsController controller = new ProductsController(db);
+            Product testProduct = new Product();
+            testProduct.Name = "TestDb Product Name";
+            testProduct.Cost = 4.00;
+            testProduct.Description = "TestDb Product Description";
+
+            // Act
+            controller.Create(testProduct);
+            var collection = (controller.Index() as ViewResult).ViewData.Model as List<Product>;
+
+            // Assert
+            CollectionAssert.Contains(collection, testProduct);
         }
     }
 }
